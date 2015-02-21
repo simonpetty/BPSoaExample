@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.BenefitCosts.Domain", "JLT\BenefitCosts\Domain\JLT.BenefitCosts.Domain.csproj", "{B59D88A1-FD83-4ED4-B152-455A0783C12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.BenefitCosts.Host", "JLT\BenefitCosts\Host\JLT.BenefitCosts.Host.csproj", "{596407F4-EE06-4396-8120-81638137C644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.BenefitCosts.Messages", "JLT\BenefitCosts\Messages\JLT.BenefitCosts.Messages.csproj", "{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.JobScheduler.Host", "JLT\JobScheduler\Host\JLT.JobScheduler.Host.csproj", "{DBE6871D-8D9F-4B1F-82A1-8D526F625E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.JobScheduler.Messages", "JLT\JobScheduler\Messages\JLT.JobScheduler.Messages.csproj", "{A851802C-6512-46CC-86EA-C69E033E3218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.PensionsEntitlement.Host", "JLT\PensionsEntitlement\Host\JLT.PensionsEntitlement.Host.csproj", "{983F18C7-9C5A-4A66-B0FE-D253CC686BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.PensionsEntitlement.Messages", "JLT\PensionsEntitlement\Messages\JLT.PensionsEntitlement.Messages.csproj", "{C635A508-8304-47DF-A847-F17F7E9F3DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.OnlineBenefitsSimulator", "JLT\OnlineBenefitsSimulator\JLT.OnlineBenefitsSimulator.csproj", "{640CF4B4-3FCE-42A9-87B8-7A50800495AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.Framework.ServiceBus", "JLT\Framework\ServiceBus\JLT.Framework.ServiceBus.csproj", "{F07C92C4-296F-4E5F-B6BD-1758581F9435}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JLT.JobScheduler.Database", "JLT\JobScheduler\Database\JLT.JobScheduler.Database.sqlproj", "{886EC23A-48DB-4A8D-BD66-974A7A787FAF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jlttfs.hitachiconsulting.com/tfs/jlt
+		SccProjectUniqueName0 = JLT\\BenefitCosts\\Domain\\JLT.BenefitCosts.Domain.csproj
+		SccProjectName0 = JLT/BenefitCosts/Domain
+		SccLocalPath0 = JLT\\BenefitCosts\\Domain
+		SccProjectUniqueName1 = JLT\\BenefitCosts\\Host\\JLT.BenefitCosts.Host.csproj
+		SccProjectName1 = JLT/BenefitCosts/Host
+		SccLocalPath1 = JLT\\BenefitCosts\\Host
+		SccProjectUniqueName2 = JLT\\BenefitCosts\\Messages\\JLT.BenefitCosts.Messages.csproj
+		SccProjectName2 = JLT/BenefitCosts/Messages
+		SccLocalPath2 = JLT\\BenefitCosts\\Messages
+		SccProjectUniqueName3 = JLT\\JobScheduler\\Host\\JLT.JobScheduler.Host.csproj
+		SccProjectName3 = JLT/JobScheduler/Host
+		SccLocalPath3 = JLT\\JobScheduler\\Host
+		SccProjectUniqueName4 = JLT\\JobScheduler\\Messages\\JLT.JobScheduler.Messages.csproj
+		SccProjectName4 = JLT/JobScheduler/Messages
+		SccLocalPath4 = JLT\\JobScheduler\\Messages
+		SccProjectUniqueName5 = JLT\\PensionsEntitlement\\Host\\JLT.PensionsEntitlement.Host.csproj
+		SccProjectName5 = JLT/PensionsEntitlement/Host
+		SccLocalPath5 = JLT\\PensionsEntitlement\\Host
+		SccProjectUniqueName6 = JLT\\PensionsEntitlement\\Messages\\JLT.PensionsEntitlement.Messages.csproj
+		SccProjectName6 = JLT/PensionsEntitlement/Messages
+		SccLocalPath6 = JLT\\PensionsEntitlement\\Messages
+		SccProjectUniqueName7 = JLT\\OnlineBenefitsSimulator\\JLT.OnlineBenefitsSimulator.csproj
+		SccProjectName7 = JLT/OnlineBenefitsSimulator
+		SccLocalPath7 = JLT\\OnlineBenefitsSimulator
+		SccLocalPath8 = .
+		SccProjectUniqueName9 = JLT\\Framework\\ServiceBus\\JLT.Framework.ServiceBus.csproj
+		SccProjectName9 = JLT/Framework/ServiceBus
+		SccLocalPath9 = JLT\\Framework\\ServiceBus
+		SccProjectUniqueName10 = JLT\\JobScheduler\\Database\\JLT.JobScheduler.Database.sqlproj
+		SccProjectName10 = JLT/JobScheduler/Database
+		SccLocalPath10 = JLT\\JobScheduler\\Database
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE6871D-8D9F-4B1F-82A1-8D526F625E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE6871D-8D9F-4B1F-82A1-8D526F625E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE6871D-8D9F-4B1F-82A1-8D526F625E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE6871D-8D9F-4B1F-82A1-8D526F625E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A851802C-6512-46CC-86EA-C69E033E3218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A851802C-6512-46CC-86EA-C69E033E3218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A851802C-6512-46CC-86EA-C69E033E3218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A851802C-6512-46CC-86EA-C69E033E3218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983F18C7-9C5A-4A66-B0FE-D253CC686BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983F18C7-9C5A-4A66-B0FE-D253CC686BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983F18C7-9C5A-4A66-B0FE-D253CC686BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983F18C7-9C5A-4A66-B0FE-D253CC686BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C635A508-8304-47DF-A847-F17F7E9F3DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C635A508-8304-47DF-A847-F17F7E9F3DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C635A508-8304-47DF-A847-F17F7E9F3DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C635A508-8304-47DF-A847-F17F7E9F3DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640CF4B4-3FCE-42A9-87B8-7A50800495AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640CF4B4-3FCE-42A9-87B8-7A50800495AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640CF4B4-3FCE-42A9-87B8-7A50800495AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640CF4B4-3FCE-42A9-87B8-7A50800495AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07C92C4-296F-4E5F-B6BD-1758581F9435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07C92C4-296F-4E5F-B6BD-1758581F9435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07C92C4-296F-4E5F-B6BD-1758581F9435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07C92C4-296F-4E5F-B6BD-1758581F9435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886EC23A-48DB-4A8D-BD66-974A7A787FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886EC23A-48DB-4A8D-BD66-974A7A787FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886EC23A-48DB-4A8D-BD66-974A7A787FAF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{886EC23A-48DB-4A8D-BD66-974A7A787FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886EC23A-48DB-4A8D-BD66-974A7A787FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886EC23A-48DB-4A8D-BD66-974A7A787FAF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

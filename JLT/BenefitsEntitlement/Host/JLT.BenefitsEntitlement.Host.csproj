@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{287BB5C2-9793-4C16-8CD6-D38F3D46EE67}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JLT.BenefitCosts.Host</RootNamespace>
+    <AssemblyName>JLT.BenefitCosts.Host</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Library\Castle\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\..\..\..\Library\Castle\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\..\Library\Quartz\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\..\..\Library\NHibernate\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\..\Library\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="JLT.Framework.Core">
+      <HintPath>..\..\..\..\Library\JLT.Framework\JLT.Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="JLT.Framework.Service">
+      <HintPath>..\..\..\..\Library\JLT.Framework\JLT.Framework.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="JLT.OnlineBenefits.IntegrationServices.Spec">
+      <HintPath>..\..\..\..\Library\JLT.OnlineBenefits\JLT.OnlineBenefits.IntegrationServices.Spec.dll</HintPath>
+    </Reference>
+    <Reference Include="Magnum">
+      <HintPath>..\..\..\..\Library\Magnum\Magnum.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit">
+      <HintPath>..\..\..\..\Library\MassTransit\MassTransit.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.Transports.RabbitMq">
+      <HintPath>..\..\..\..\Library\MassTransit\MassTransit.Transports.RabbitMq.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.WindsorIntegration">
+      <HintPath>..\..\..\..\Library\MassTransit\MassTransit.WindsorIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\..\Library\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.3.0.18, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\Quartz\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\..\..\Library\RabbitMQ.Client\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Topshelf">
+      <HintPath>..\..\..\..\Library\Topshelf\Topshelf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consumers\CreatePolicyCost.cs" />
+    <Compile Include="Consumers\EmployeeStuff.cs" />
+    <Compile Include="Consumers\EvaluateBenefitRateFormula.cs" />
+    <Compile Include="EventSubscribers\EmployeeEventSubscriber.cs" />
+    <Compile Include="Messages\EvaluateBenefitCostRequest.cs" />
+    <Compile Include="Messages\EvaluateBenefitValueResponse.cs" />
+    <Compile Include="Messages\EvaluateBenefitCostResponse.cs" />
+    <Compile Include="Messages\EvaluateBenefitValueRequest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\JobScheduler\Source\JLT\JobScheduler\Messages\JLT.JobScheduler.Messages\JLT.JobScheduler.Messages.csproj">
+      <Project>{a851802c-6512-46cc-86ea-c69e033e3218}</Project>
+      <Name>JLT.JobScheduler.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\OnlineBenefits\Source\JLT\OnlineBenefits\Messages\JLT.OnlineBenefits.Messages.csproj">
+      <Project>{21b54e1c-0ead-44ff-852e-6d9ba8764a57}</Project>
+      <Name>JLT.OnlineBenefits.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\BenefitCosts\Source\JLT\BenefitCosts\Domain\JLT.BenefitCosts.Domain.csproj">
+      <Project>{b59d88a1-fd83-4ed4-b152-455a0783c12a}</Project>
+      <Name>JLT.BenefitCosts.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\BenefitCosts\Source\JLT\BenefitCosts\Messages\JLT.BenefitCosts.Messages.csproj">
+      <Project>{838e2fb4-b5f3-4fd6-8699-b79a991cc9c9}</Project>
+      <Name>JLT.BenefitCosts.Messages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

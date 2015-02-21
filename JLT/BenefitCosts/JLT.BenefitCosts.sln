@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.BenefitCosts.Domain", "Domain\JLT.BenefitCosts.Domain.csproj", "{B59D88A1-FD83-4ED4-B152-455A0783C12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.BenefitCosts.Host", "Host\JLT.BenefitCosts.Host.csproj", "{596407F4-EE06-4396-8120-81638137C644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLT.BenefitCosts.Messages", "Messages\JLT.BenefitCosts.Messages.csproj", "{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jlttfs.hitachiconsulting.com/tfs/jlt
+		SccProjectUniqueName0 = Domain\\JLT.BenefitCosts.Domain.csproj
+		SccProjectName0 = Domain
+		SccAuxPath0 = https://jlttfs.hitachiconsulting.com/tfs/jlt
+		SccLocalPath0 = Domain
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Host\\JLT.BenefitCosts.Host.csproj
+		SccProjectName1 = Host
+		SccAuxPath1 = https://jlttfs.hitachiconsulting.com/tfs/jlt
+		SccLocalPath1 = Host
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Messages\\JLT.BenefitCosts.Messages.csproj
+		SccProjectName2 = Messages
+		SccAuxPath2 = https://jlttfs.hitachiconsulting.com/tfs/jlt
+		SccLocalPath2 = Messages
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59D88A1-FD83-4ED4-B152-455A0783C12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596407F4-EE06-4396-8120-81638137C644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838E2FB4-B5F3-4FD6-8699-B79A991CC9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
